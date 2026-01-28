@@ -104,6 +104,7 @@ def create_candlestick_chart(df: pd.DataFrame, title: str = "주가 차트") -> 
             xanchor="right",
             x=1,
         ),
+        dragmode="pan",  # 드래그로 이동 (확대는 휠 사용)
     )
 
     # Y축 레이블
